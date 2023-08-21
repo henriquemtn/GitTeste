@@ -24,13 +24,19 @@ public class GitTeste {
 		}
 		List<Double> todasNotas = notas; 
 		double Soma = 0;
+		double Div = 0;
 		
 		for(Double a: notas) {
 			Soma += a;
 		}
+		
+		for(Double b: notas) {
+			Div = Soma / 5;
+		}
+		
 		System.out.println("Notas de todos os alunos somadas: " + todasNotas );
 		System.out.println("Soma de todas as notas: " + Soma);
-		
+		System.out.println("Média das notas: " + Div);
 		
 	}
 
