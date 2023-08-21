@@ -37,12 +37,16 @@ public class GitTeste {
 			}
 		}
 		
-		
+		Collections.sort(notas);
+		Double menor = notas.get(0);
+		Double maior = notas.get(notas.size()-1);	
 		
 		System.out.println("Notas de todos os alunos somadas: " + todasNotas );
 		System.out.println("Soma de todas as notas: " + Soma);
 		System.out.println("Média das notas: " + Div);
 		System.out.println("Menores que 6: " + menores);
+		System.out.println("Menor nota: " + menor);
+		System.out.println("Maior nota: " + maior);
 		
 	}
 
