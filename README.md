@@ -1,4 +1,4 @@
-# GitTeste
+# GitTeste - Atividade do Senac SC
 Requisitios da Atividade:
 
 1. Crie um programa que leie a nota de 5 alunoscom uma função qu some essas 5 notas.
