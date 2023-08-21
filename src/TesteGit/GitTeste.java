@@ -3,6 +3,7 @@ package TesteGit;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class GitTeste {
 
@@ -25,18 +26,23 @@ public class GitTeste {
 		List<Double> todasNotas = notas; 
 		double Soma = 0;
 		double Div = 0;
+		int menores = 0;
 		
 		for(Double a: notas) {
 			Soma += a;
+			Div = Soma / 5;	
+			
+			if (a < 6) {
+				menores++;
+			}
 		}
 		
-		for(Double b: notas) {
-			Div = Soma / 5;
-		}
+		
 		
 		System.out.println("Notas de todos os alunos somadas: " + todasNotas );
 		System.out.println("Soma de todas as notas: " + Soma);
 		System.out.println("Média das notas: " + Div);
+		System.out.println("Menores que 6: " + menores);
 		
 	}
 
